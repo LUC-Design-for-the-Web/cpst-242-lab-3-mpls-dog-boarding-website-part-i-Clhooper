@@ -1,0 +1,88 @@
+html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+    b, i,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section, summary,
+    time, mark, audio, video {
+        margin:0;
+        padding:0;
+        border:0;
+        outline:0;
+        font-size:100%;
+        vertical-align:baseline;
+        background:transparent;
+    }
+
+    body{
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+    }
+
+    #container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 105px auto 15%;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas: 
+        "head head head"
+        "main main main"
+        "foot foot foot";
+    }
+
+    header{
+        
+        grid-area: head;
+        
+    }
+    main{
+        grid-area:main;
+        
+    }
+    footer{
+        grid-area: foot;
+        padding-top: 40px;
+    }
+
+    #copyright{
+        width: 275px;
+        margin: auto;
+    }
+
+   header img{
+    display: block;
+    width: 20%;
+    margin: auto;
+
+   }
+
+    #flexcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        background-image: url(/img/dog_bg.jpeg);
+        align-items: center;
+        background-size: 100%;
+
+    }
+
+   aside{
+    display: flex;
+    flex: 1 0 325px;
+    height: 350px;
+    padding: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: #ffffffcf;
+    border-radius: 10px;
+   }
+
+    
